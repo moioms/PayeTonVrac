@@ -1,0 +1,74 @@
+@import "_import.css";
+
+.mainContainer .gridContainer .card .cardLink{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: .5rem;
+    transition: bottom .3s;
+    background-color: var(--mainColor);
+}
+
+.mainContainer .gridContainer .card:hover .cardLink{
+    bottom: 0;
+}
+
+.mainContainer .gridContainer .card .cardLink *{
+    color: white;
+}
+
+.mainContainer .gridContainer .card .cardLink h2{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    letter-spacing: 1px;
+}
+
+.mainContainer .gridContainer .card:nth-of-type(9n + 1){
+    background-color: #373E98;
+}
+
+.mainContainer .gridContainer .card:nth-of-type(9n + 2){
+    background-color: #F16775;
+}
+
+.mainContainer .gridContainer .card:nth-of-type(9n + 3){
+    background-color: #FEE36E;
+}
+
+.mainContainer .gridContainer .card:nth-of-type(9n + 4){
+    background-color: #ABD699;
+}
+
+.mainContainer .gridContainer .card:nth-of-type(9n + 5){
+    background-color: #A96762;
+}
+
+.mainContainer .gridContainer .card:nth-of-type(9n + 6){
+    background-color: #D85C27;
+}
+
+.mainContainer .gridContainer .card:nth-of-type(9n + 7){
+    background-color: #B999BE;
+}
+
+.mainContainer .gridContainer .card:nth-of-type(9n + 8){
+    background-color: #007CC7;
+}
+
+.mainContainer .gridContainer .card:nth-of-type(9n + 9){
+    background-color: #FFB3C1;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 767.98px) {
+    .mainContainer .gridContainer .card .cardLink h2{
+        font-size: 1rem;
+    }
+
+
+    .mainContainer .gridContainer .card .cardLink p{
+        font-size: .8rem;
+    }
+}
